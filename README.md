@@ -1,9 +1,11 @@
 # River Thames Connectivity and London's East-West Divide: A Geospatial Analysis
 
-A geospatial analysis of how Thames crossing infrastructure shapes socioeconomic inequality across London's boroughs, identifying the relationship between river accessibility and deprivation in East London.
+A geospatial analysis of how the Thames River and crossing infrastructure shapes socioeconomic inequality across London's boroughs, identifying the relationship between river accessibility and deprivation in East London.
 
 **Course:** Geospatial Intelligence 2025/2026 — Nova IMS, Universidade Nova de Lisboa  
 **Author:** Pedro Salgado
+
+<img width="2362" height="1594" alt="Image" src="https://github.com/user-attachments/assets/be7b3130-4ff3-49db-98c0-9a0626df43a4" />
 
 ---
 
@@ -18,23 +20,32 @@ A geospatial analysis of how Thames crossing infrastructure shapes socioeconomic
 1. `London Analysis.aprx` — ArcGIS Pro project file containing all layers, maps and analytical outputs
 2. `LondonsEastWestEconDivide.pdf` — final report
 3. `OnePager.pdf` — project proposal one-pager
-4. `OnePager_GeoInt_Template.pdf` — Nova IMS one-pager template
-5. `Presentation_and_Final_Report_GeoInt_Guidelines.pdf` — Nova IMS course guidelines
+4. `OnePager_GeoInt_Template.pdf` — one-pager guidelines
+5. `Presentation_and_Final_Report_GeoInt_Guidelines.pdf` — project guidelines
 6. `Teachersannotations` — teacher's improvement suggestions
 
 ---
 
 ## Context
 
-The River Thames has shaped London's socioeconomic characteristics for its entire existence. As the river enabled the city's rise as a global trading hub, it simultaneously created a persistent barrier to north-south connectivity, addressed very unevenly across the city's east-west axis. Today, the contrast is clearer than ever: while West London is spoiled for choices to cross the river by all modes of transportation, East London has to choose between the never-ending traffic of the Blackwall Tunnel, the expensive Dartford Crossing, or a slow and inefficient ferry. Traditional London buses in the East have also adjusted to this reality, running as few routes as possible across the river in the eastern boroughs.
+The River Thames has shaped London's socioeconomic characteristics for its entire existence. As the river enabled the city's rise as a global trading hub, it simultaneously created a persistent barrier to north-south connectivity, addressed very unevenly across the city's east-west axis. Today, the contrast is clearer than ever: while West London is spoiled for choices to cross the river by all modes of transportation, East London has to choose between congested tunnels, expensive toll crossings, or a slow and inefficient ferry.
+The reasons for this imbalance are political, geographical and historical. Geographically, the river's conditions for building get considerably harder as it flows eastward, as wider spans demanded more complex and costly engineering, delaying eastern bridge construction well into the twentieth century. Beyond geography, the East End's long history of docklands, heavy industry and working-class settlement left it abandoned and stuck in time as Britain's port industry declined, with its industrial legacy continuing to weigh politically on the area whenever new infrastructure was being considered.
 
-The reasons for this imbalance are political, geographical and historical. Geographically, the river's conditions for building get considerably harder as it flows eastward — wider spans demanded more complex and costly engineering, delaying any Eastern bridge construction well into the twentieth century. Tower Bridge, built in 1886 as the most eastern fixed crossing at the time, required a ludicrous amount of effort, money and brute-force engineering to be built where it is, and it is still in Central-East London, showing how difficult it has historically been to push crossings further east.
 
-Beyond geography, the economic history of London's East End was long dominated by docklands, heavy industry and working-class settlement. It was in East London that a significant share of the British Empire's ships arrived and unloaded, with the Port of London operating as the most important port in the world during the height of the Empire. As Britain's port industry and global dominance faded over the twentieth century, East London was left abandoned and stuck in time, with its working-class, industrial legacy continuing to weigh politically on the area whenever new infrastructure was being considered.
+<img width="4782" height="3381" alt="Image" src="https://github.com/user-attachments/assets/3f13ac8a-1623-416e-971b-f989dfdce534" />
+
+---
+
+
 
 This project is aligned with **UN Sustainable Development Goal 10 — Reduced Inequalities**, specifically targets 10.1, 10.2 and 10.3, which concern income inequality, universal social and economic inclusion, and equal opportunities. Infrastructure accessibility is a fundamental enabler of inclusion, and where it is absent, inequality becomes entrenched.
 
 ---
+
+![Image](https://github.com/user-attachments/assets/905a1aa6-128f-4842-b38d-4d4a2fdf17cd)
+
+---
+
 
 ## Data
 
@@ -65,18 +76,16 @@ Full methodological detail and the methodological diagram are in [`LondonsEastWe
 
 ---
 
-## Key Findings
+## Results
 
-Raster distance maps, infrastructure counts and borough-level aggregation consistently pointed to the same reality throughout the analysis: East London emerged as both the most deprived region in the city and the least prepared in terms of mobility, while West London clearly outranked all other regional groupings by a wide margin.
+Raster distance maps, infrastructure counts and borough-level aggregation consistently pointed to the same reality: East London emerged as both the most deprived region in the city and the least served in terms of river crossing infrastructure, while West London clearly outranked all other regional groupings by a wide margin.
 
-A moderate-to-strong correlation was found between crossing count by borough and the Socioeconomic Index (R² = 0.44), rising to R² = 0.60 after excluding three genuine structural outliers whose situations cannot be accurately captured through composite indices:
+A moderate-to-strong correlation was found between crossing count by borough and the Socioeconomic Index (R² = 0.44), rising to R² = 0.60 after controlling for boroughs whose structural characteristics composite indices cannot accurately capture. The continuous raster mean distance measure proved less reliable than the discrete crossing count, failing to account for borough boundaries and the river as a physical barrier, though it still confirmed the same broader east-west pattern.
+On the future of East London: potential solutions are controversial and difficult to implement, with road crossing proposals facing consistent opposition since the 1990s. Recent developments are more hopeful — the Silvertown Tunnel, the Elizabeth Line and the regeneration of Canary Wharf and Greenwich have begun to reshape East London's place within the city. As Europe moves away from car-based mobility, non-motorised and public transport alternatives become essential: Thames Clippers evolving into a genuine commuter service, cycle highways in boroughs like Newham and Barking and Dagenham, and further DLR and Underground expansion. As London approaches 10 million residents, targeted efforts to close this gap are not optional.
 
-- **City of London** — Europe's main financial centre, with a residential population of approximately 8,583 people and over half a million daily workers, making it effectively a reverse commuter zone whose income figures bear no resemblance to those of a standard residential borough. The City does not form part of London's 32 boroughs and operates in a largely separate manner to the rest of the city, with its own governance structure and a distinct mayor, the Lord Mayor of the City of London.
-- **Kensington and Chelsea** and **Hammersmith and Fulham** — among London's most affluent boroughs, but historically resistant to large-scale infrastructure developments including bridges, major roads and cycling infrastructure, with planning decisions following very different trajectories from those observed elsewhere in the city. This explains the mismatch between high socioeconomic performance and unusually low accessibility scores for areas in or adjacent to Central London.
 
-The continuous raster mean distance measure proved less reliable than the discrete crossing count — it did not account for borough boundaries or, most importantly, the river as a physical barrier, with boroughs near the City of London transport hotspot being disproportionately advantaged. Despite this, it still confirmed the same broader east-west pattern, with East London consistently dominating the areas furthest from a crossing.
 
-On the future of East London: potential solutions are controversial and difficult to implement. Since the 1990s, proposals for new road crossings have faced strong opposition from local communities and environmental groups, constrained further by London City Airport's presence since 1987. Recent developments point to a more hopeful trajectory — the Silvertown Tunnel, the Elizabeth Line, and the regeneration of Canary Wharf and Greenwich have begun to reshape East London's place within the city. However, as Europe increasingly moves away from car-based mobility, non-motorised and public transport alternatives will be essential. The Thames Clippers could evolve into a genuine commuter service rather than remaining primarily a tourist attraction. Boroughs such as Newham or Barking and Dagenham could host the first high-capacity cycle highways on the eastern side of the river. Further expansion of the DLR and Underground, alongside tram reintroduction, could offer solutions better suited to East London's infrastructural constraints. As London continues to grow and approaches 10 million residents, it is crucial that renewed and targeted efforts are made to avoid leaving East London and its more vulnerable populations even further behind.
+<img width="4782" height="3381" alt="Image" src="https://github.com/user-attachments/assets/a37de36e-86e6-41a0-957d-fd939df143d9" />
 
 ---
 
